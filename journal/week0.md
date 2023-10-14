@@ -1,3 +1,4 @@
 # Week 0 — Billing and Architecture
 ## Concptual Diagram
-![ConceptualDiagram](../assests/Cruddur%20-%20Conceptual%20Diagram.png)
+![Conceptual Diagram](../assests/Cruddur%20-%20Conceptual%20Diagram.png)
+![Logical Diagram](../assests/Cruddur%20-%20Logical%20Diagram.png)
