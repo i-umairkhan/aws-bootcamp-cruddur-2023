@@ -27,6 +27,64 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
 ```
+
+
+
+We'll also run these commands indivually to perform the install manually
+
+### Create a new User and Generate AWS Credentials
+
+- Go to (IAM Users Console](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users) andrew create a new user
+- `Enable console access` for the user
+- Create a new `Admin` Group and apply `AdministratorAccess`
+- Create the user and go find and click into the user
+- Click on `Security Credentials` and `Create Access Key`
+- Choose AWS CLI Access
+- Download the CSV with the credentials
+
+### Set Env Vars
+
+We will set these credentials for the current bash terminal
+```
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION=us-east-1
+```
+
+We'll tell Gitpod to remember these credentials if we relaunch our workspaces
+```
+gp env AWS_ACCESS_KEY_ID=""
+gp env AWS_SECRET_ACCESS_KEY=""
+gp env AWS_DEFAULT_REGION=us-east-1
+```
+
+### Check that the AWS CLI is working and you are the expected user
+
+```sh
+aws sts get-caller-identity
+```
+
+You should see something like this:
+```json
+{
+    "UserId": "AIFBZRJIQN2ONP4ET4EK4",
+    "Account": "655602346534",
+    "Arn": "arn:aws:iam::655602346534:user/andrewcloudcamp"
+}
+```
+
+## Enable Billing 
+
+We need to turn on Billing Alerts to recieve alerts...
+
+
+- In your Root Account go to the [Billing Page](https://console.aws.amazon.com/billing/)
+- Under `Billing Preferences` Choose `Receive Billing Alerts`
+- Save Preferences
+
+
+
+
 ## Concptual Diagram
 ![Conceptual Diagram](../assests/Cruddur%20-%20Conceptual%20Diagram.png)
 ## Logical Diagram
