@@ -3,8 +3,9 @@
 Install AWS CLI <br>
 * We are going to install the AWS CLI when our Gitpod enviroment lanuches. <br>
 * We are are going to set AWS CLI to use partial autoprompt mode to make it easier to debug CLI commands. <br> 
-* The bash commands we are using are the same as the [AWS CLI Install Instructions]https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html <br> 
-Update our `.gitpod.yaml` to include the following task. <br>
+* The bash commands we are using are the same as the [AWS CLI Install Instructions]https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html <br>
+
+Update our `.gitpod.yaml` to include the following task. 
 ```
 tasks:
   - name: aws-cli
