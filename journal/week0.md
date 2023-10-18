@@ -27,7 +27,6 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
 ```
-```
 ## Concptual Diagram
 ![Conceptual Diagram](../assests/Cruddur%20-%20Conceptual%20Diagram.png)
 ## Logical Diagram
