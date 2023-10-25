@@ -10,6 +10,5 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
 vscode:
   extensions:
-    - 42Crunch.vscode-openapi
     - pkief.material-icon-theme
     - teabyii.ayu
