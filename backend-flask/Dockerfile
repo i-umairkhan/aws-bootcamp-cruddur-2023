@@ -1,7 +1,7 @@
 FROM python:3.10-slim-buster
 
 # Setting Work Dir to /backend-flask
-Workdir /backend-flask
+WORKDIR /backend-flask
 
 COPY requirements.txt requirements.txt
 
