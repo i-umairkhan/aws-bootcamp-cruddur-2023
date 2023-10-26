@@ -9,6 +9,6 @@
 - Created Biling Alarm using SNS and Cloud Watch from AWS CLI
 
 ## Concptual Diagram
-![Conceptual Diagram](../assests/Cruddur%20-%20Conceptual%20Diagram.png)
+![Conceptual Diagram](../_docs/assets/Cruddur%20-%20Conceptual%20Diagram.png)
 ## Logical Diagram
-![Logical Diagram](../assests/Cruddur%20-%20Logical%20Diagram.png)
+![Logical Diagram](../_docs/assets/Cruddur%20-%20Logical%20Diagram.png)
