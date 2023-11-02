@@ -1,10 +1,13 @@
 openapi: '3.0.2'
+
 info:
   title: Cruddur Backend API
   version: '1.0'
+  description: 'Cruddur Backend API for intraction throught custom interface(CLI or UI)'
     
 servers:
   - url: https://api.server.test/v1
+
 paths:
   /api/activities/home:
     get:
