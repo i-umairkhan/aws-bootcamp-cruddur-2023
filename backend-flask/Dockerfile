@@ -12,6 +12,8 @@ COPY . .
 
 # Setting ENV Vars
 ENV FLASK_ENV=development
+ENV FRONTEND_URL="*"
+ENV BACKEND_URL="*"
 
 EXPOSE ${PORT}
 
