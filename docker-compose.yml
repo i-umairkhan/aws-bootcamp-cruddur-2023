@@ -4,8 +4,8 @@ services:
 # Backend services in Flask
   backend-flask:
     environment:
-      FRONTEND_URL: "http://127.0.0.1:3000"
-      BACKEND_URL: "http://127.0.0.1:4567"
+      FRONTEND_URL: "*"
+      BACKEND_URL: "*"
     build: ./backend-flask
     ports: 
     - "4567:4567"
@@ -18,7 +18,7 @@ services:
       REACT_APP_BACKEND_URL: "http://127.0.0.1:4567"
     build: ./frontend-react-js
     ports:
-      - "3000:3000"
+      - "8080:80"
     volumes:
       - ./frontend-react-js:/frontend-react-js
 
