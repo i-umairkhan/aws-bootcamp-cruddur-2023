@@ -1,15 +1,14 @@
-FROM node:16.18
-
-ENV PORT=3000
-
-WORKDIR /frontend-react-js
-
-COPY ./package.json /frontend-react-js/
-
+# Build Stage
+FROM node:latest AS builder
+WORKDIR /app
+COPY package.json ./
 RUN npm install
-
 COPY . .
+RUN npm run build
 
-EXPOSE ${PORT}
+# Runtime Stage
+FROM nginx:alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
 
-CMD ["npm","start"]
